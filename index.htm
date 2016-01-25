@@ -10,7 +10,7 @@
   <!-- Bootstrap -->
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="css/fwslider.css" media="all">
+  <link rel="stylesheet" href="css/flickity.css" media="all">
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
   <!--[if lt IE 9]>
@@ -18,8 +18,8 @@
       <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
-  <script type="text/javascript" src="js/fwslider.js"></script>
+  <script type="text/javascript" src="js/flickity.pkgd.js"></script>
+  <script type="text/javascript" src="js/slide.js"></script>
 
 </head>
 
@@ -62,10 +62,12 @@
   </header>
   <!-- start slider -->
   <div class="slider">
-    <div class="">
-
+    <div class="gallery js-flickity main-gallery" data-flickity-options='{ "freeScroll": false, "autoPlay": 3000, "wrapAround": true }' tabindex="0">
+      <div class="gallery-cell"><img src="img/Camada 3.jpg" /></div>
+      <div class="gallery-cell"><img src="img/Camada 4.jpg" /></div>
     </div>
   </div>
+
   <div class="boards">
 
   </div>
