@@ -14,6 +14,27 @@ body{
   background-size: cover;
   height: 950px;
 }
+.slTitle{
+  text-transform: uppercase;
+  position: absolute;
+  top: 60px;
+}
+.title {  /* Slider Title*/
+	color: #1FF;
+	font-size: 7vw;
+	/*padding-top: 5%;*/
+	font-style: normal;
+	border: none;
+	font-weight: 800;
+	line-height: 1.3em;
+	margin-bottom: 5%;
+  position: relative;;
+  /*top: 40px;*/
+}
+.button{
+  position: absolute;;
+  /*top: 30px;*/
+}
 /* board block */
 .X_but{
 	text-align:center;
