@@ -1,38 +1,75 @@
 
+
 body{
   margin: 0;
   padding: 0;
 }
-
+a:hover{
+  text-decoration: none !important;
+  color: #fff !important;
+}
 .navbar {
     padding: 20px 0;
-    border-radius: 0px !important;
-    margin-bottom: 0px !important;
+    border-radius: 0px ;
+    margin-bottom: 0px ;
+    text-transform: uppercase;
+    font-weight: 700;
 }
+.navbar-inverse {
+    background-color: #000;
+}
+.navbar-brand {
+    padding: 14px 15px;
+  }
 .company{
   background-image: url(../img/bg.jpg);
   background-size: cover;
   height: 950px;
 }
+.slidebox{
+  width: 100vw;
+  max-height: 65vh;
+  overflow: hidden;
+  position: relative;
+}
+.nextbutton{
+display: inline-block;
+    text-decoration: none;
+    padding: 7px 14px;
+    background: #000;
+    color: #bbb;
+    text-transform: uppercase;
+    box-shadow: 0 0 1px #000;
+}
+.nextbutton a:hover {
+  color: #fff !important;
+  box-shadow: 0 0 5px #000;
+}
 .slTitle{
   text-transform: uppercase;
   position: absolute;
-  top: 60px;
+  top:0;
+  left:0;
+  width:100vw;
+  height:100%;
+}
+.slTitle_wrap{
+  max-width: 600px;
+  margin: 15% 20%;
 }
 .title {  /* Slider Title*/
-	color: #1FF;
-	font-size: 7vw;
-	/*padding-top: 5%;*/
+	color: #fff;
+	font-size: 6vh;
 	font-style: normal;
 	border: none;
 	font-weight: 800;
 	line-height: 1.3em;
 	margin-bottom: 5%;
-  position: relative;;
+  /*position: relative;;*/
   /*top: 40px;*/
 }
 .button{
-  position: absolute;;
+  /*position: absolute;;*/
   /*top: 30px;*/
 }
 /* board block */
@@ -46,31 +83,59 @@ i.X1{
 	background:url(../img/img-sprite.png)-196px -269px;
 	display:inline-block;
 }
-.boards{
+.feat_cont{
+  padding-top: 10%;
+}
+.boards,.company,.features{
 	padding:10% 0;
   color: #000;
   text-align: center;
-  text-transform: uppercase;
 
 }
-.boards h2{
-	font-size:3em;
-	font-weight: 800;
-	margin-bottom: 1.5%;
-}
-.boards h3{
-	font-size:1.5em;
-	font-weight:700;
-	margin:2% 0 0 0;
+.company{
+  color: #fff;
 }
 .boards p{
+text-transform: uppercase;
+}
+.boards h3{
+margin-top: 500px;
+}
+.company p{
+  font-size: 15px;
+  line-height: 2;
+}
+.upper{
+
+}
+h2{
+	font-size:2.9em;
+  font-family: "Montserrat";
+  text-transform: uppercase;
+	font-weight: 700;
+	margin-bottom: 1.5%;
+}
+h3{
+	font-size:1.5em;
+  font-family: "Montserrat";
+	font-weight:700;
+  text-transform: uppercase;
+	margin:2% 0 0 0;
+}
+h4{
+  font-size: 16px;
+  font-family: "Montserrat";
+	font-weight: 700;
+}
+p{
 	font-size: 0.95em;
-	font-weight: 600;
+  font-family: "Montserrat";
+	font-weight: 400;
 	margin-bottom:1%;
 }
-.features{
+/*.features{
 	padding:8% 0;
-}
+}*/
 
 #flexisel {
 display:none;
@@ -155,7 +220,7 @@ ul.footer_box{
 	list-style:none;
 	padding:0;
 }
-ul.footer_box h4{
+ul.footer_box h3{
 	color:#fff;
 	font-size:1.1em;
 	text-transform:uppercase;
